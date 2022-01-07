@@ -1,0 +1,168 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+:root {
+    --main-sedan-color: hsl(31, 77%, 52%);
+    --main-suv-color: hsl(184, 100%, 22%);
+    --main-luxury-color: hsl(179, 100%, 13%);
+    --secondary-color: hsl(0, 0%, 95%);
+    --p-color: hsla(0, 0%, 100%, 0.75)
+}
+
+body {
+
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    color: var(--p-color);
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    font-weight: 400;
+
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 2.2em;
+
+}
+
+
+button {
+    font-family: inherit;
+    background-color: var(--secondary-color);
+    display: block;
+    border-radius: 3em;
+    border: none;
+    padding: 1em;
+    margin: auto;
+    margin-top: 6em;
+    width: 55%;
+    cursor: pointer;
+    width: 75%;
+    color: black;
+    float: left;
+    margin-left: -1em;
+    border: solid 2px transparent;
+    /* adding transparent border so on hover text in the button doesn't move when border needs to appear*/
+
+
+}
+
+
+
+.container {
+    display: inline-block;
+    width: 13.2em;
+    height: 25em;
+    padding: 3em;
+    text-align: left;
+    margin: 0;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    padding-bottom: 2em;
+
+
+}
+
+.sedans {
+    background-color: var(--main-sedan-color);
+}
+
+.suvs {
+    background-color: var(--main-suv-color);
+}
+
+.luxury {
+    background-color: var(--main-luxury-color);
+
+}
+
+.sed {
+    color: var(--main-sedan-color);
+}
+
+.sed:hover {
+
+    background-color: var(--main-sedan-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.suv {
+    color: var(--main-suv-color);
+}
+
+.suv:hover {
+
+    background-color: var(--main-suv-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+
+.lux {
+    color: var(--main-luxury-color);
+}
+
+.lux:hover {
+
+    background-color: var(--main-lux-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+/*
+ Viewports for border radius 
+ for the lack of a better solution on my part lol.
+
+ hope I'll find better way to do this
+*/
+
+@media only screen and (min-width: 880px) {
+    .sedans {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .luxury {
+        border-radius: 0 0.5em 0.5em 0;
+    }
+}
+
+@media only screen and (max-width: 880px) and (min-width:592px) {
+    .sedans {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .luxury {
+        border-radius: 0 0 0.5em 0.5em;
+
+    }
+
+    .suvs {
+        border-radius: 0 0.5em 0.5em 0;
+    }
+}
+
+@media only screen and (max-width:592px) {
+    .sedans {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 0.5em 0.5em;
+        margin-bottom: 3em;
+    }
+
+
+
+}
