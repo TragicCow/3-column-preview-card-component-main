@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Alt text](https://raw.githubusercontent.com/TragicCow/3-column-preview-card-component-main/master/Screenshots/screenshot_frontendmentor1.png?raw=true "Title")
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/TragicCow/3-column-preview-card-component-main
+- Live Site URL: https://tragiccow.github.io/3-column-preview-card-component-main/
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 ### What I learned
 
 It was the first time I used media queries but I think there was better ways to handle the issue (rounding borders of the elements according to the size of the screen). 
-I'll definitely check out other solutions to find a better way to do this
+I'll definitely check out other solutions to find a better way to do this.
 
 
 ## Author
